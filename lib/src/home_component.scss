@@ -1,0 +1,14 @@
+@import 'package:angular_components/material_button/mixins';
+
+@include button-background-color('material-button', #4A148C);
+@include button-color('material-button', white);
+
+.login-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+material-button {
+    font-size: 1.2em;
+}
