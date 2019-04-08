@@ -7,6 +7,7 @@ import 'package:angular_router/angular_router.dart';
   templateUrl: 'app_component.html',
   styleUrls: ['app_component.css'],
   directives: [routerDirectives],
+  providers: [ClassProvider(RoutePath)],
   exports: [RoutePaths, Routes],
 )
 class AppComponent {

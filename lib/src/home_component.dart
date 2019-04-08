@@ -1,5 +1,7 @@
 import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
+import 'package:angular_router/angular_router.dart';
+import 'route_paths.dart';
 
 @Component(
   selector: 'home-component',
@@ -9,5 +11,12 @@ import 'package:angular_components/angular_components.dart';
   providers: [materialProviders,]
 )
 class HomeComponent {
-  var name = 'Ayush';
+  final Router _router;
+  HomeComponent(this._router);
+
+  void signIn() {
+    
+  }
+
+  void signUp() => _router.navigateByUrl(RoutePaths.signUp1.toUrl());
 }
