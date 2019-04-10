@@ -7,6 +7,6 @@
     <material-input class='right' floatingLabel label='Confirm Password' type='password'></material-input>
     <nav>
         <material-button class='btn' type="button" (trigger)='next()'>Create Account</material-button>
-        <a class='sign-in'>Already have an account?</a>
+        <a class='sign-in' [routerLink]='RoutePaths.signIn.toUrl()' [routerLinkActive]="'active'">Already have an account?</a>
     </nav>
 </div>

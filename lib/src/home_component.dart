@@ -14,9 +14,7 @@ class HomeComponent {
   final Router _router;
   HomeComponent(this._router);
 
-  void signIn() {
-    
-  }
+  void signIn() => _router.navigateByUrl(RoutePaths.signIn.toUrl());
 
   void signUp() => _router.navigateByUrl(RoutePaths.signUp1.toUrl());
 }

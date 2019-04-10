@@ -6,8 +6,6 @@
 @include input-label-color(#B39DDB);
 @include button-background-color('.btn', #4A148C);
 @include button-color('.btn', white);
-@include button-background-color('.calendar', transparent);
-@include icon-button-color('.calendar', white);
 
 material-input {
     color: white;
@@ -41,6 +39,10 @@ nav {
         color: white;
         display: block;
         margin-top: 1vh;
+    }
+    
+    .sign-in:hover {
+        color: #4A148C;
     }
 }
 

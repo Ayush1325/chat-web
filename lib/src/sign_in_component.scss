@@ -1,0 +1,21 @@
+@import 'package:angular_components/material_input/mixins';
+@import 'package:angular_components/material_button/mixins';
+
+@include button-background-color('.btn', #4A148C);
+@include button-color('.btn', white);
+@include material-input-theme(#B39DDB);
+@include input-label-color(#B39DDB);
+
+material-input {
+    color: white;
+}
+
+material-button {
+    font-size: 1em;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

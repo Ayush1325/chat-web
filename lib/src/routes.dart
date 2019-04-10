@@ -4,6 +4,7 @@ import 'route_paths.dart';
 import 'home_component.template.dart' as home_template;
 import 'sign_up_1_component.template.dart' as sign_up_1_template;
 import 'sign_up_2_component.template.dart' as sign_up_2_template;
+import 'sign_in_component.template.dart' as sign_in_template;
 
 export 'route_paths.dart';
 
@@ -23,6 +24,11 @@ class Routes {
     component: sign_up_2_template.SignUp2ComponentNgFactory,
   );
 
+  static final signIn = RouteDefinition(
+    routePath: RoutePaths.signIn,
+    component: sign_in_template.SignInComponentNgFactory,
+  );
+
   static final all = <RouteDefinition>[
     RouteDefinition.redirect(
       path: '',
@@ -30,6 +36,7 @@ class Routes {
     ),
     home,
     signUp1,
-    signUp2
+    signUp2,
+    signIn,
   ];
 }

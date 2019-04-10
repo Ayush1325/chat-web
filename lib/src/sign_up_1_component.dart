@@ -2,13 +2,15 @@ import 'package:angular/angular.dart';
 import 'package:angular_components/angular_components.dart';
 import 'package:angular_router/angular_router.dart';
 import 'route_paths.dart';
+import 'routes.dart';
 
 @Component(
   selector: 'sign-up-1-component',
   templateUrl: 'sign_up_1_component.html',
   styleUrls: ['sign_up_1_component.css'],
-  directives: [MaterialInputComponent, MaterialButtonComponent, ],
+  directives: [MaterialInputComponent, MaterialButtonComponent, routerDirectives],
   providers: [materialProviders,],
+  exports: [RoutePaths, Routes],
 )
 class SignUp1Component {
   final Router _router;
