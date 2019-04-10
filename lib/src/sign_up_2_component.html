@@ -1,0 +1,15 @@
+<link
+    rel="stylesheet"
+    type="text/css"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<div class="container">
+    <material-button icon class='select-img'>
+        <material-icon icon='account_circle' class='img'></material-icon>
+    </material-button>
+    <br>
+    <material-input label='Display Name' floatingLabel></material-input>
+    <material-input label='Status' floatingLabel multiline [maxCount]="80" rows='2'></material-input>
+    <br>
+    <material-button class='submit' type="button" (trigger)='submit()'>Continue</material-button>
+</div>

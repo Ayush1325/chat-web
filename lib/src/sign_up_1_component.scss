@@ -3,10 +3,9 @@
 @import 'package:angular_components/css/material/material';
 
 @include material-input-theme(#B39DDB);
-@include material-input-counter-color(white);
 @include input-label-color(#B39DDB);
-@include button-background-color('.nav-btn', #4A148C);
-@include button-color('.nav-btn', white);
+@include button-background-color('.btn', #4A148C);
+@include button-color('.btn', white);
 @include button-background-color('.calendar', transparent);
 @include icon-button-color('.calendar', white);
 
@@ -29,10 +28,20 @@ material-input {
     justify-self: start;
 }
 
-.nav-btn {
-    font-size: 1em;
-    width: 150px;
-    grid-row-start: 10;
+nav {
+    justify-self: center;
+    grid-row-start: 6;
+    grid-column: 1/3;
+    
+    .btn {
+        font-size: 1em;
+    }
+
+    .sign-in {
+        color: white;
+        display: block;
+        margin-top: 1vh;
+    }
 }
 
 material-datepicker {

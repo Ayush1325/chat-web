@@ -1,0 +1,28 @@
+@import 'package:angular_components/material_button/mixins';
+@import 'package:angular_components/material_icon/mixins';
+@import 'package:angular_components/material_input/mixins';
+
+@include icon-button-color("material-button.select-img", white);
+@include material-input-theme(#B39DDB);
+@include input-label-color(#B39DDB);
+@include material-input-counter-color(white);
+@include button-background-color('material-button.submit', #4A148C);
+@include button-color('material-button.submit', white);
+
+.img {
+    @include material-icon-size(10em);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.submit {
+    font-size: 1.2em;
+}
+
+material-input {
+    color: white;
+}

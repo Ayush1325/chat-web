@@ -13,10 +13,6 @@ import 'route_paths.dart';
 class SignUp1Component {
   final Router _router;
   SignUp1Component(this._router);
-  bool date_visible = false;
-
-  void back() {
-  }
 
   void next() => _router.navigateByUrl(RoutePaths.signUp2.toUrl());
 }
