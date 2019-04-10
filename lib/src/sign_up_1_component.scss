@@ -1,0 +1,40 @@
+@import 'package:angular_components/material_input/mixins';
+@import 'package:angular_components/material_button/mixins';
+@import 'package:angular_components/css/material/material';
+
+@include material-input-theme(#B39DDB);
+@include material-input-counter-color(white);
+@include input-label-color(#B39DDB);
+@include button-background-color('.nav-btn', #4A148C);
+@include button-color('.nav-btn', white);
+@include button-background-color('.calendar', transparent);
+@include icon-button-color('.calendar', white);
+
+material-input {
+    color: white;
+}
+
+.user-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+}
+
+.left {
+    justify-self: end;
+}
+
+.right {
+    justify-self: start;
+}
+
+.nav-btn {
+    font-size: 1em;
+    width: 150px;
+    grid-row-start: 10;
+}
+
+material-datepicker {
+    color: white;
+}

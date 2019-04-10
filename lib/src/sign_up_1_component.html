@@ -1,1 +1,10 @@
-<h1>Hello {{name}}</h1>
+<div class="user-details">
+    <material-input class='left' [floatingLabel]='true' label='First Name'></material-input>
+    <material-input class='right' [floatingLabel]='true' label='Last Name'></material-input>
+    <material-input class='left' [dateParsing] [floatingLabel]='true' label='D.O.B' hintText='2015-07-20'></material-input>
+    <material-input class='right' [floatingLabel]='true' label='Email' type='email'></material-input>
+    <material-input class='left' [floatingLabel]='true' label='Password' type='password'></material-input>
+    <material-input class='right' [floatingLabel]='true' label='Confirm Password' type='password'></material-input>
+    <material-button class='left nav-btn' type="button" (trigger)='back()'>Go Back</material-button>
+    <material-button class='right nav-btn' type="button" (trigger)='next()'>Next</material-button>
+</div>
