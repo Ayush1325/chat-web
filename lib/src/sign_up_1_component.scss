@@ -11,6 +11,10 @@ material-input {
     color: white;
 }
 
+material-input ::ng-deep .hint-text {
+    color: #4A148C;
+}
+
 .user-details {
     display: grid;
     grid-template-columns: 1fr 1fr;

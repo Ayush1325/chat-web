@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    background-color: black;
+    background: url('https://firebasestorage.googleapis.com/v0/b/smarthome-ee796.appspot.com/o/wallpaper-830417.jpg?alt=media&token=c559c91a-6089-46e2-8eaf-1a6b3e6a78ab') center/cover no-repeat;
     height: 100vh;
 }
 
